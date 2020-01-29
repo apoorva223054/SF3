@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.nirvanaxp.jars</groupId>
+	<artifactId>EmailUtility</artifactId>
+	<name>EmailUtility</name>
+	<build>
+		<finalName>${project.artifactId}${project.parent.version}</finalName>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>com.nirvanaxp.jars</groupId>
+			<artifactId>POSNirvanaServerCommon</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.nirvanaxp.jars</groupId>
+			<artifactId>POSNirvanaORM</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.nirvanaxp.jars</groupId>
+			<artifactId>POSNirvanaProtocol</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.nirvanaxp.jars</groupId>
+			<artifactId>POSNirvanaMDBClient</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		 
+
+		<dependency>
+			<groupId>com.nirvanaxp.jars</groupId>
+			<artifactId>MosambeeKeySpec.jar</artifactId>
+			<version>1.0</version>
+		<systemPath>C:/apoorvdoc/dev/Dev/Server/tomee/tomee7.0.0-SNAPSHOT/lib/nirvana/MosambeeKeySpec.jar</systemPath> 
+ 
+			<scope>system</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.maven-play-plugin.org.allcolor.yahp</groupId>
+			<artifactId>yahp-internal</artifactId>
+			<version>1.3</version>
+		</dependency>
+	</dependencies>
+	<parent>
+		<groupId>com.nirvanaxp.services</groupId>
+		<artifactId>NirvanaXPServices</artifactId>
+		<version>V6</version>
+		<relativePath>../NirvanaXPServices</relativePath>
+	</parent>
+</project>

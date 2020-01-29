@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.nirvanaxp.jars</groupId>
+	<artifactId>SNSUtility</artifactId>
+	<name>SNSUtility</name>
+	<build>
+		<finalName>${project.artifactId}${project.parent.version}</finalName>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>com.nirvanaxp.jars</groupId>
+			<artifactId>POSNirvanaServerCommon</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.nirvanaxp.jars</groupId>
+			<artifactId>POSNirvanaORM</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-sns</artifactId>
+			<version>1.11.358</version>
+			
+		</dependency>
+
+
+
+
+
+		<dependency>
+			<groupId>org.finra.herd</groupId>
+			<artifactId>herd-model</artifactId>
+			<version>0.47.0</version>
+		
+		</dependency>
+
+	</dependencies>
+	<parent>
+		<groupId>com.nirvanaxp.services</groupId>
+		<artifactId>NirvanaXPServices</artifactId>
+		<version>V6</version>
+		<relativePath>../NirvanaXPServices</relativePath>
+	</parent>
+</project>

@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.nirvanaxp.wars</groupId>
+	<artifactId>CustomerExperienceService</artifactId>
+	<name>CustomerExperienceService</name>
+	<build>
+		<finalName>${project.artifactId}${project.parent.version}</finalName>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>com.nirvanaxp.jars</groupId>
+			<artifactId>POSNirvanaServerCommon</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.nirvanaxp.jars</groupId>
+			<artifactId>UserManagementUtility</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.nirvanaxp.jars</groupId>
+			<artifactId>POSNirvanaORM</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.nirvanaxp.jars</groupId>
+			<artifactId>StoreForwardUtility</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<packaging>war</packaging>
+	<parent>
+		<groupId>com.nirvanaxp.services</groupId>
+		<artifactId>NirvanaXPServices</artifactId>
+		<version>V6</version>
+		<relativePath>../NirvanaXPServices</relativePath>
+	</parent>
+</project>

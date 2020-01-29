@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="POSNGlobalORM">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>com.nirvanaxp.global.types.entities.User</class>
+		<class>com.nirvanaxp.global.types.entities.accounts.Account</class>
+		<class>com.nirvanaxp.global.types.entities.Address</class>
+		<class>com.nirvanaxp.global.types.entities.accounts.AccountsToBusiness</class>
+		<class>com.nirvanaxp.global.types.entities.Business</class>
+		<class>com.nirvanaxp.global.types.entities.BusinessType</class>
+		<class>com.nirvanaxp.global.types.entities.FavBusiness</class>
+		<class>com.nirvanaxp.global.types.entities.LoggedInUser</class>
+		<class>com.nirvanaxp.global.types.entities.Model</class>
+		<class>com.nirvanaxp.global.types.entities.Region</class>
+		<class>com.nirvanaxp.global.types.entities.Payment</class>
+		<class>com.nirvanaxp.global.types.entities.Role</class>
+		<class>com.nirvanaxp.global.types.entities.Template</class>
+		<class>com.nirvanaxp.global.types.entities.TemplateToBusinessType</class>
+		<class>com.nirvanaxp.global.types.entities.Timezone</class>
+		<class>com.nirvanaxp.global.types.entities.TransactionalCurrency</class>
+		<class>com.nirvanaxp.global.types.entities.UsersToBusiness</class>
+		<class>com.nirvanaxp.global.types.entities.UsersToRole</class>
+		<class>com.nirvanaxp.global.types.entities.UserSession</class>
+		<class>com.nirvanaxp.global.types.entities.UsersToAccount</class>
+		<class>com.nirvanaxp.global.types.entities.UsersToAddress</class>
+		<class>com.nirvanaxp.global.types.entities.devicemgmt.DeviceInfoToEncyptionKey</class>
+		<class>com.nirvanaxp.global.types.entities.DeviceType</class>
+		<class>com.nirvanaxp.global.types.entities.devicemgmt.DeviceInfo</class>
+		<class>com.nirvanaxp.global.types.entities.UserSessionHistory</class>
+		<class>com.nirvanaxp.global.types.entities.devicemgmt.EncryptionKey</class>
+		<class>com.nirvanaxp.global.types.entities.accounts.TempAccount</class>
+		<class>com.nirvanaxp.global.types.entities.partners.POSNPartners</class>
+		<class>com.nirvanaxp.global.types.entities.devicemgmt.DeviceInfoToAccounts</class>
+		<class>com.nirvanaxp.global.types.entities.devicemgmt.DeviceInfoToBusiness</class>
+		<class>com.nirvanaxp.global.types.entities.accounts.AccountToServerConfig</class>
+		<class>com.nirvanaxp.global.types.entities.accounts.ServerConfig</class>
+		<class>com.nirvanaxp.global.types.entities.UserAuth</class>
+		<class>com.nirvanaxp.global.types.entities.countries.Countries</class>
+
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.connection.provider_class" value="org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider" />
+			<property name="hibernate.order_inserts" value="true" />
+			<property name="hibernate.order_updates" value="true" />
+			<property name="hibernate.connection.release_mode" value="auto" />
+			<!-- do not use L2 cache for pnglobal -->
+			<property name="hibernate.cache.use_second_level_cache" value="false"/>
+			<property name="hibernate.c3p0.minPoolSize" value="2" />
+			<property name="hibernate.c3p0.maxPoolSize" value="100" />
+			<property name="hibernate.c3p0.acquireIncrement" value="2" />
+			<property name="hibernate.c3p0.acquireRetryAttempts" value="2" />
+			<property name="hibernate.c3p0.autoCommitOnClose" value="true" />
+			<property name="hibernate.c3p0.driverClass" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.c3p0.maxIdleTime" value="120" />
+			<property name="hibernate.c3p0.idleConnectionTestPeriod" value="60" />
+			<property name="hibernate.c3p0.unreturnedConnectionTimeout" value="300" />
+			<property name="hibernate.c3p0.debugUnreturnedConnectionStackTraces" value="true" />
+			<property name="hibernate.c3p0.preferredTestQuery" value="select 1 from dual" />
+			<property name="hibernate.c3p0.breakAfterAcquireFailure" value="false" />
+		</properties>
+	</persistence-unit>
+</persistence>

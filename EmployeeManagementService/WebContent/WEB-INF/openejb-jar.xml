@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml><openejb-jar xmlns="http://www.openejb.org/openejb-jar/1.1">
+	<!-- class-name has to be the JAXRS application name or this one if no Application 
+		is defined -->
+	<pojo-deployment class-name="jaxrs-application">
+		<properties>
+			cxf.jaxrs.providers=com.nirvanaxp.services.providers.ServiceExceptionMapper,com.nirvanaxp.services.providers.InputCleanser,com.nirvanaxp.services.providers.NirvanaJsonProvider,com.nirvanaxp.services.providers.DateParamConverter
+			com.nirvanaxp.services.providers.ServiceExceptionMapper
+			<!-- ,com.nirvanaxp.services.providers.InputCleanser -->
+		</properties>
+	</pojo-deployment>
+</openejb-jar>
+

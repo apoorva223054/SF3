@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="POSNirvanaORM">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>com.nirvanaxp.types.entities.CdoMgmt</class>
+		<class>com.nirvanaxp.types.entities.Day</class>
+		<class>com.nirvanaxp.types.entities.Floorplan</class>
+		<class>com.nirvanaxp.types.entities.POSNirvanaBaseClass</class>
+		<class>com.nirvanaxp.types.entities.FieldType</class>
+		<class>com.nirvanaxp.types.entities.SocialMedia</class>
+		<class>com.nirvanaxp.types.entities.TransactionalCurrency</class>
+		<class>com.nirvanaxp.types.entities.address.Address</class>
+		<class>com.nirvanaxp.types.entities.application.Application</class>
+		<class>com.nirvanaxp.types.entities.application.ApplicationToFunction</class>
+		<class>com.nirvanaxp.types.entities.business.FavBusiness</class>
+		<class>com.nirvanaxp.types.entities.business.BusinessHour</class>
+		<class>com.nirvanaxp.types.entities.catalog.category.Category</class>
+		<class>com.nirvanaxp.types.entities.catalog.category.CategoryToPrinter</class>
+		<class>com.nirvanaxp.types.entities.catalog.category.CategoryToDiscount</class>
+		<class>com.nirvanaxp.types.entities.catalog.course.Course</class>
+		<class>com.nirvanaxp.types.entities.catalog.items.Item</class>
+		<class>com.nirvanaxp.types.entities.catalog.items.ItemsAttribute</class>
+		<class>com.nirvanaxp.types.entities.catalog.items.ItemsAttributeType</class>
+		<class>com.nirvanaxp.types.entities.catalog.items.ItemsChar</class>
+		<class>com.nirvanaxp.types.entities.catalog.items.ItemsAttributeTypeToItemsAttribute</class>
+		<class>com.nirvanaxp.types.entities.catalog.items.ItemsCharToItemsAttribute</class>
+		<class>com.nirvanaxp.types.entities.catalog.items.ItemsToItemsAttributeType</class>
+		<class>com.nirvanaxp.types.entities.catalog.items.ItemsToItemsChar</class>
+		<class>com.nirvanaxp.types.entities.catalog.items.ItemsToDiscount</class>
+		<class>com.nirvanaxp.types.entities.catalog.items.ItemsToItemsAttribute</class>
+		<class>com.nirvanaxp.types.entities.catalog.items.ItemsToPrinter</class>
+		<class>com.nirvanaxp.types.entities.catalog.items.CategoryItem</class>
+		<class>com.nirvanaxp.types.entities.catalog.items.ItemsType</class>
+		<class>com.nirvanaxp.types.entities.discounts.Discount</class>
+		<class>com.nirvanaxp.types.entities.discounts.DiscountsType</class>
+		<class>com.nirvanaxp.types.entities.feedback.FeedbackType</class>
+		<class>com.nirvanaxp.types.entities.feedback.FeedbackQuestion</class>
+		<class>com.nirvanaxp.types.entities.feedback.FeedbackField</class>
+		<class>com.nirvanaxp.types.entities.feedback.Smiley</class>
+		<class>com.nirvanaxp.types.entities.function.Function</class>
+		<class>com.nirvanaxp.types.entities.inventory.LocationsToSupplier</class>
+		<class>com.nirvanaxp.types.entities.inventory.Inventory</class>
+		<class>com.nirvanaxp.types.entities.inventory.InventoryOrderReceipt</class>
+		<class>com.nirvanaxp.types.entities.inventory.UnitOfMeasurement</class>
+		<class>com.nirvanaxp.types.entities.inventory.UnitOfMeasurementType</class>
+		<class>com.nirvanaxp.types.entities.locations.Location</class>
+		<class>com.nirvanaxp.types.entities.locations.LocationsToFunction</class>
+		<class>com.nirvanaxp.types.entities.locations.LocationsType</class>
+		<class>com.nirvanaxp.types.entities.locations.Seat</class>
+		<class>com.nirvanaxp.types.entities.locations.LocationToApplication</class>
+		<class>com.nirvanaxp.types.entities.locations.BusinessType</class>
+		<class>com.nirvanaxp.types.entities.locations.MetaBusinessTypeToFunction</class>
+		<class>com.nirvanaxp.types.entities.locations.MetaBusinessTypeToApplication</class>
+		<class>com.nirvanaxp.types.entities.locations.receipt.PrinterReceipt</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderDetailAttribute</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderDetailItem</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderHeader</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderHeaderHistory</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderSource</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderSourceGroup</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderStatus</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderDetailAttributeHistory</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderDetailItemsHistory</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderDetailStatus</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderPaymentDetail</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderStatusHistory</class>
+		<class>com.nirvanaxp.types.entities.orders.BatchDetail</class>
+		<class>com.nirvanaxp.types.entities.payment.PaymentMethod</class>
+		<class>com.nirvanaxp.types.entities.payment.PaymentMethodType</class>
+		<class>com.nirvanaxp.types.entities.payment.PaymentTransactionType</class>
+		<class>com.nirvanaxp.types.entities.payment.PaymentWay</class>
+		<class>com.nirvanaxp.types.entities.payment.PaymentGatewayType</class>
+		<class>com.nirvanaxp.types.entities.payment.TransactionStatus</class>
+		<class>com.nirvanaxp.types.entities.payment.Paymentgateway</class>
+		<class>com.nirvanaxp.types.entities.payment.PaymentType</class>
+		<class>com.nirvanaxp.types.entities.pnglobal.PnglobalBusiness</class>
+		<class>com.nirvanaxp.types.entities.pnglobal.PnglobalBusinessType</class>
+		<class>com.nirvanaxp.types.entities.printers.Printer</class>
+		<class>com.nirvanaxp.types.entities.printers.PrintersModel</class>
+		<class>com.nirvanaxp.types.entities.printers.PrintersInterface</class>
+		<class>com.nirvanaxp.types.entities.printers.PrintersType</class>
+		<class>com.nirvanaxp.types.entities.reasons.Reasons</class>
+		<class>com.nirvanaxp.types.entities.reasons.ReasonType</class>
+		<class>com.nirvanaxp.types.entities.reservation.ContactPreference</class>
+		<class>com.nirvanaxp.types.entities.reservation.RequestType</class>
+		<class>com.nirvanaxp.types.entities.reservation.Reservation</class>
+		<class>com.nirvanaxp.types.entities.reservation.ReservationsHistory</class>
+		<class>com.nirvanaxp.types.entities.reservation.ReservationsStatus</class>
+		<class>com.nirvanaxp.types.entities.reservation.ReservationsType</class>
+		<class>com.nirvanaxp.types.entities.reservation.ReservationsSchedule</class>
+		<class>com.nirvanaxp.types.entities.reservation.ReservationsScheduleDay</class>
+		<class>com.nirvanaxp.types.entities.reservation.ReservationsScheduleXref</class>
+		<class>com.nirvanaxp.types.entities.reservation.ReservationsSlot</class>
+		<class>com.nirvanaxp.types.entities.reservation.ReservationSlotActiveClientInfo</class>
+		<class>com.nirvanaxp.types.entities.roles.Role</class>
+		<class>com.nirvanaxp.types.entities.roles.RolesToApplicationFunction</class>
+		<class>com.nirvanaxp.types.entities.roles.RolesToFunction</class>
+		<class>com.nirvanaxp.types.entities.salestax.SalesTax</class>
+		<class>com.nirvanaxp.types.entities.time.Timezone</class>
+		<class>com.nirvanaxp.types.entities.user.User</class>
+		<class>com.nirvanaxp.types.entities.user.UsersLog</class>
+		<class>com.nirvanaxp.types.entities.user.UsersToRole</class>
+		<class>com.nirvanaxp.types.entities.user.UsersToFeebackDetail</class>
+		<class>com.nirvanaxp.types.entities.user.UsersToSocialMedia</class>
+		<class>com.nirvanaxp.types.entities.user.UsersToLocation</class>
+		<class>com.nirvanaxp.types.entities.user.experience.CustomerExperience</class>
+		<class>com.nirvanaxp.types.entities.employee.EmployeeOperation</class>
+		<class>com.nirvanaxp.types.entities.employee.EmployeesToEmployeesOperation</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderSourceGroupToPaymentgatewayType</class>
+		<class>com.nirvanaxp.types.entities.orders.OrderSourceToPaymentgatewayType</class>
+		<class>com.nirvanaxp.types.entities.inventory.InventoryItemDefault</class>
+		<class>com.nirvanaxp.types.entities.inventory.InventoryItemBom</class>
+		<class>com.nirvanaxp.types.entities.inventory.InventoryAttributeBOM</class>
+		<class>com.nirvanaxp.types.entities.email.EmailSentHistory</class>
+		<class>com.nirvanaxp.types.entities.email.EmailHistory</class>
+		<class>com.nirvanaxp.types.entities.email.EmailTemplate</class>
+		<class>com.nirvanaxp.types.entities.email.SmtpConfig</class>
+		<class>com.nirvanaxp.types.entities.email.BusinessEmailSetting</class>
+		<class>com.nirvanaxp.types.entities.feedback.CustomerExperienceToUserDetail</class>
+		<class>com.nirvanaxp.types.entities.feedback.CustomerExperienceToUserFeedback</class>
+		<class>com.nirvanaxp.types.entities.user.UsersToPayment</class>
+		<class>com.nirvanaxp.types.entities.user.UsersToPaymentHistory</class>
+		<class>com.nirvanaxp.types.entities.locations.LocationSetting</class>
+		<class>com.nirvanaxp.types.entities.orders.DeliveryOption</class>
+		<class>com.nirvanaxp.types.entities.orders.OptionType</class>
+	 
+
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+			<property name="hibernate.order_inserts" value="true" />
+			<property name="hibernate.order_updates" value="true" />
+			<property name="hibernate.connection.release_mode" value="auto" />
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.connection.provider_class" value="org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider" />
+			<property name="hibernate.c3p0.minPoolSize" value="2" />
+			<property name="hibernate.c3p0.maxPoolSize" value="100" />
+			<property name="hibernate.c3p0.acquireIncrement" value="2" />
+			<property name="hibernate.c3p0.acquireRetryAttempts" value="2" />
+			<property name="hibernate.c3p0.autoCommitOnClose" value="true" />
+			<property name="hibernate.c3p0.driverClass" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.c3p0.maxIdleTime" value="120" />
+			<property name="hibernate.c3p0.idleConnectionTestPeriod" value="60" />
+			<!-- allow a connection to be locked up to 30 minutes -->
+			<property name="hibernate.c3p0.unreturnedConnectionTimeout" value="1800" />
+			<property name="hibernate.c3p0.debugUnreturnedConnectionStackTraces" value="true"/>
+			<property name="hibernate.c3p0.preferredTestQuery" value="select 1 from dual" />
+			<property name="hibernate.c3p0.breakAfterAcquireFailure" value="false" />
+		</properties>
+	</persistence-unit>
+</persistence>
